@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    string str;
+    cin >> str;
+
+    int i, j;
+    for (i = 0; i < str.size(); i += 2)
+    {
+        for (j = 0; j < str.size() - 1; j += 2)
+        {
+            if (str[j] > str[j + 2])
+            {
+                swap(str[j], str[j + 2]);
+            }
+        }
+    }
+
+    cout << str << "\n";
+
+    return 0;
+}
