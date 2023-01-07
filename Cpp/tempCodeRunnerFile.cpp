@@ -1,19 +1,14 @@
 #include <bits/stdc++.h>
+
 using namespace std;
+
 int main()
 {
-    long long int n, a, rem;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> a;
-        rem = a % 10;
-    }
 
-    if (rem == 0 || rem == 5)
-        cout << "Yes\n";
-    else
-        cout << "No\n";
+    double a, b;
+    cin >> a >> b;
+
+    cout << "MEDIA = " << fixed << setprecision(5) << ((a * 3.5) + (b * 7.5)) / (3.5 + 2.0) / 2.0 << "\n";
 
     return 0;
 }
