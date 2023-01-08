@@ -5,10 +5,14 @@ using namespace std;
 int main()
 {
 
-    double a, b;
-    cin >> a >> b;
+    double a, b, c, sum, w, avg;
 
-    cout << "MEDIA = " << fixed << setprecision(5) << ((a * 3.5) + (b * 7.5)) / (3.5 + 2.0) / 2.0 << "\n";
+    cin >> a >> b >> c;
+
+    sum = (a * 2 + b * 3 + c * 5);
+    avg = sum / 10;
+
+    cout << "MEDIA = " << fixed << setprecision(1) << avg << "\n";
 
     return 0;
 }
