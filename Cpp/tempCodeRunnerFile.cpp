@@ -4,15 +4,16 @@ using namespace std;
 
 int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
 
-    double a, b, c, sum, w, avg;
+    int empNum, workHour;
+    double perHour;
 
-    cin >> a >> b >> c;
+    cin >> empNum >> workHour >> perHour;
 
-    sum = (a * 2 + b * 3 + c * 5);
-    avg = sum / 10;
-
-    cout << "MEDIA = " << fixed << setprecision(1) << avg << "\n";
+    cout << "NUMBER = " << empNum << "\n"
+         << "SALARY = U$ " << fixed << setprecision(2) << workHour * perHour << "\n";
 
     return 0;
 }
