@@ -1,13 +1,18 @@
-#include <stdio.h>
-#include <math.h>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void func()
+{
+    int *p = new int;
+    return;
+}
 
 int main()
 {
-    int a, b, c, x;
-    scanf("%d %d %d", &a, &b, &c);
-    x = (a + b + abs(a - b)) / 2;
-    x = (x + c + abs(x - c)) / 2;
-    printf("%d eh o maior", x);
+    // func();
+    int *p = new int;
+    cout << *p;
 
     return 0;
 }
