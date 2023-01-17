@@ -14,13 +14,10 @@ int main()
         maxi = max(maxi, a[i]);
     }
 
-    vector<int> res(3);
-
     for (int i = 0; i < 4; i++)
     {
         if (a[i] != maxi)
         {
-            // res.push_back(maxi - a[i]);
             cout << maxi - a[i] << " ";
         }
     }
